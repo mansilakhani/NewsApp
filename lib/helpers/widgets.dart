@@ -2,26 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../models/screens/articles_view.dart';
 
-Widget MyAppBar() {
-  return AppBar(
-    title: Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: const [
-        Text(
-          "Flutter",
-          style: TextStyle(color: Colors.black87, fontWeight: FontWeight.w600),
-        ),
-        Text(
-          "News",
-          style: TextStyle(color: Colors.blue, fontWeight: FontWeight.w600),
-        )
-      ],
-    ),
-    backgroundColor: Colors.transparent,
-    elevation: 0.0,
-  );
-}
-
 class NewsTile extends StatelessWidget {
   final String imgUrl, title, desc, content, posturl;
 
